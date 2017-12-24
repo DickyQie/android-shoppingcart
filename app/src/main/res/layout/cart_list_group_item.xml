@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:id="@+id/item_group_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:background="@color/colorGrayan"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="11sp"
+        >
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/checkbox_payment"
+            android:button="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:layout_marginLeft="11sp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="#EAEAEC"
+        />
+</LinearLayout>
