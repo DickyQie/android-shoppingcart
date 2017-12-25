@@ -30,7 +30,6 @@
                 showCommodityCalculation();
             }
         });
-
         /**
          * 单选
          */
@@ -63,7 +62,6 @@
                 Toast.makeText(MainActivity.this,"删除操作",Toast.LENGTH_LONG).show();
             }
         });
-
         /***
          * 数量增加和减少
          */
@@ -83,10 +81,8 @@
                 showCommodityCalculation();
             }
         });
-       
-    }</code></pre> 
+    }
+    
 <p>这是我项目中用到的购物车，基本的功能都有了的。</p> 
 <p>有需要的小伙们，可以参考一下。</p> 
 <span id="OSC_h3_1"></span>
-<h3>&nbsp;</h3> 
-<span id="OSC_h3_2"></span>
