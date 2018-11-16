@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+
+    <ImageView
+        android:id="@+id/item_chlid_image"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="18dp">
+
+            <TextView
+                android:id="@+id/item_chlid_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="¥ 88.00"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="2dp">
+
+                <Button
+                    android:id="@+id/item_chlid_close"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="-" />
+
+                <View
+                    android:layout_width="0.5sp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/item_chlid_num"
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="0.5sp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/item_chlid_add"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="+" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
