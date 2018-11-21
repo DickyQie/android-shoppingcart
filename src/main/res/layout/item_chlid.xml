@@ -4,20 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:paddingLeft="25dp"
+    android:paddingBottom="15dp"
+    >
 
     <CheckBox
         android:id="@+id/cb_child"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dp" />
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:background="@drawable/checkbox_payment"
+        android:button="@android:color/transparent"/>
 
     <ImageView
         android:id="@+id/item_chlid_image"
         android:layout_width="85dp"
         android:layout_height="80dp"
         android:scaleType="fitXY"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="15dp"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
 import com.zhangqie.cart.adapter.CartAdapter;
@@ -21,10 +22,9 @@ import com.zhangqie.cart.itemclick.OnViewItemClickListener;
 
 
 /*****
- * 模仿淘宝购物车 功能
+ * RecyclerView 模仿淘宝购物车功能
  *
- * 删除选择商品，商品计算，
- *
+ * 删除选择商品，商品计算，选择，全选反选，商品数量加减等
  *
  */
 public class MainActivity extends AppCompatActivity {
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         cartNum = findViewById(R.id.cart_num);
         cartMoney = findViewById(R.id.cart_money);
         cartShoppMoular = findViewById(R.id.cart_shopp_moular);
+        cartShoppMoular.setOnClickListener(new OnClickListener());
         checkBox = findViewById(R.id.cbx_quanx_check);
         checkBox.setOnClickListener(new OnClickListener());
         btnDelete = (TextView) findViewById(R.id.btn_delete);
@@ -172,6 +173,9 @@ public class MainActivity extends AppCompatActivity {
                     //删除选中商品
                     cartAdapter.removeChecked();
                     showCommodityCalculation();
+                    break;
+                case R.id.cart_shopp_moular:
+                    Toast.makeText(MainActivity.this,"提交订单:  "+cartMoney.getText().toString()+"元",Toast.LENGTH_LONG).show();
                     break;
             }
         }

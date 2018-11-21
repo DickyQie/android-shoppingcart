@@ -32,15 +32,15 @@
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/colorAccent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
         />
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_nest_demo"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
         >
     </android.support.v7.widget.RecyclerView>
 
@@ -56,8 +56,10 @@
         >
         <CheckBox
             android:id="@+id/cbx_quanx_check"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:background="@drawable/checkbox_payment"
+            android:button="@android:color/transparent"
             android:layout_marginLeft="10dp"
             />
         <TextView
@@ -66,7 +68,7 @@
             android:textColor="#000000"
             android:textSize="14dp"
             android:text="全选"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="5dp"
             />
         <TextView
             android:id="@+id/cart_num"
@@ -97,7 +99,7 @@
 
         <Button
             android:id="@+id/cart_shopp_moular"
-            android:layout_width="119dp"
+            android:layout_width="99dp"
             android:layout_height="match_parent"
             android:background="@color/colorPrimary"
             android:layout_marginLeft="5dp"
